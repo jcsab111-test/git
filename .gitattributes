@@ -19,17 +19,15 @@ CODE_OF_CONDUCT.md -whitespace
 /t/t????-*.sh conflict-marker-size=32
 /t/unit-tests/clar/test/expected/* whitespace=-blank-at-eof
 /templates/hooks/*.sample whitespace=indent,trail,space,incomplete text eol=lf
-# 1. Force GraphQL to be seen as a primary language
-*.graphql linguist-language=GraphQL
-*.graphql linguist-detectable=true
-*.graphql linguist-vendored=false
-*.graphql linguist-generated=false
+# --- GraphQL ---
+*.graphql linguist-language=GraphQL linguist-detectable=true
+*.gql linguist-language=GraphQL linguist-detectable=true
 
-# 2. Force Git Attributes to be seen as a primary language
-.gitattributes linguist-language=Git-Attributes
-.gitattributes linguist-detectable=true
-.gitattributes linguist-vendored=false
+# --- Git Configurations ---
+.gitattributes linguist-language=Git-Attributes linguist-detectable=true
+.gitignore     linguist-language=Ignore-List linguist-detectable=true
+.gitconfig     linguist-language=Git-Config linguist-detectable=true
+.gitmodules    linguist-language=Git-Config linguist-detectable=true
 
-# 3. Optional: Hide "noise" that might be drowning out the percentages
-# (Uncomment the line below if you have a massive folder taking up 99% of the bar)
-# folder-to-ignore/* linguist-vendored=true
+# --- General Configs (Optional but common) ---
+.editorconfig  linguist-language=EditorConfig linguist-detectable=true
