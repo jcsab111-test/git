@@ -27,7 +27,7 @@ CODE_OF_CONDUCT.md -whitespace
 .gitattributes linguist-language=Git-Attributes linguist-detectable=true
 .gitignore     linguist-language=Ignore-List linguist-detectable=true
 .c     linguist-language=Git-Config linguist-detectable=true
-.gitmodules    linguist-language=Git-Config linguist-detectable=true
+.h    linguist-language=Git-Config linguist-detectable=true
 
 # --- General Configs (Optional but common) ---
 .editorconfig  linguist-language=EditorConfig linguist-detectable=true
