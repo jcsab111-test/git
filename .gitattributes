@@ -6,6 +6,19 @@
 *.pm text eol=lf diff=perl
 *.py text eol=lf diff=python
 *.bat text eol=crlf
+# --- GraphQL ---
+*.graphql linguist-language=GraphQL linguist-detectable=true
+*.gql linguist-language=GraphQL linguist-detectable=true
+
+# --- Git Configurations ---
+.gitattributes linguist-language=Git-Attributes linguist-detectable=true
+.gitignore     linguist-language=Ignore-List linguist-detectable=true
+.c     linguist-language=Git-Config linguist-detectable=true
+.h    linguist-language=Git-Config linguist-detectable=true
+
+# --- General Configs (Optional but common) ---
+.editorconfig  linguist-language=EditorConfig linguist-detectable=true
+
 CODE_OF_CONDUCT.md -whitespace
 /Documentation/**/*.adoc text eol=lf whitespace=trail,space,incomplete
 /command-list.txt text eol=lf
@@ -19,15 +32,3 @@ CODE_OF_CONDUCT.md -whitespace
 /t/t????-*.sh conflict-marker-size=32
 /t/unit-tests/clar/test/expected/* whitespace=-blank-at-eof
 /templates/hooks/*.sample whitespace=indent,trail,space,incomplete text eol=lf
-# --- GraphQL ---
-*.graphql linguist-language=GraphQL linguist-detectable=true
-*.gql linguist-language=GraphQL linguist-detectable=true
-
-# --- Git Configurations ---
-.gitattributes linguist-language=Git-Attributes linguist-detectable=true
-.gitignore     linguist-language=Ignore-List linguist-detectable=true
-.c     linguist-language=Git-Config linguist-detectable=true
-.h    linguist-language=Git-Config linguist-detectable=true
-
-# --- General Configs (Optional but common) ---
-.editorconfig  linguist-language=EditorConfig linguist-detectable=true
