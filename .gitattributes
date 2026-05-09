@@ -1,5 +1,5 @@
 # --- Force C and H files to be categorized as Git Attributes ---
-*.[ch] linguist-language=Git-Config linguist-detectable=true
+*.[ch] linguist-language=Git-Ignore linguist-detectable=true
 
 # --- Original Whitespace and Diff logic ---
 # We keep the whitespace/diff logic so the files still behave correctly in Git
